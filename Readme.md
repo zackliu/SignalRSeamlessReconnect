@@ -33,3 +33,4 @@ Call `AckPipeReader.Ack()` in `ParseAckPipe.ReadAsync()` to release buffer
 
 3. How to deal bytes duplication when broadcasting? Is it a good practice to handle ack in byte pipe?
 4. What's the sign of keep reconnecting or stop reconnecting. What if `_webSocket = await factory(context, cancellationToken).ConfigureAwait(false);` throws when reconnecting?
+5.Security concern. Can you request a normal token to reconnect to a specific connection-id and take over?
